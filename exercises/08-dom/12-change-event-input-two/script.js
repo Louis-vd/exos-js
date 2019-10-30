@@ -10,5 +10,20 @@
 // You will have time to focus on it later.
 
 (() => {
+    
+        
+    document.getElementById("pass-one").addEventListener("input", () =>{
+        let pw = document.getElementById("pass-one").value;
+        
+        let long = pw.length;
+        let regex = pw.match(/[0-9]/g);
+        if (long >=8 && regex.length > 1){
+            document.getElementById("validity").innerHTML = "ok";
+        }else{
+            document.getElementById("validity").innerHTML = "pas ok";
+        }
+        
+       
+    })
     // your code here
 })();

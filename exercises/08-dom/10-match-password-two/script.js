@@ -10,5 +10,20 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", () =>{
+
+        var a = document.getElementById("pass-one").value;
+        var b = document.getElementById("pass-two").value;
+        if (a==b){ 
+            document.getElementById("pass-one").style.borderColor = "green";
+            document.getElementById("pass-two").style.borderColor = "green";
+            
+        }
+        else {
+            document.getElementById("pass-one").classList.add("error");
+            document.getElementById("pass-two").classList.add("error");
+    
+       }
+    })
     // your code here
 })();
