@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click",async () =>{
+       try{ let arrPersons = await window.lib.getPersons();
+        console.log(arrPersons)
+        }
+        catch (error){
+            console.error(error)
+        }
+
+
+
+
+    })
     // your code here
 })();
